@@ -1,0 +1,134 @@
+.aside {
+    display: flex;
+    flex-direction: column;
+    min-width: 276px;
+    height: 550px;
+    
+    &__nav {
+        display: flex;
+        min-width: 273px;
+        background-color: #F77358;
+    }
+
+    &__menu {
+        flex: auto;
+        min-width: 91px;
+        min-height: 48px;
+    }
+
+    .user {
+        background: url(../img/aside/users.png) no-repeat center;
+        background-color: #e04d60;
+    }
+    
+    .chat {
+        background: url(../img/aside/chat.png) no-repeat center;
+    }
+    
+    .like {
+        background: url(../img/aside/like.png) no-repeat center;
+    }
+
+    &__users {
+        display: block;
+        overflow: auto;
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+        min-width: 273px;
+        height: 85px;
+        border-bottom: #F1F1F1 1px solid;
+
+        @include small {
+            justify-content: space-around;
+        }
+
+        @include medium {
+            justify-content: space-around;
+        }
+    }
+
+    &__img {
+        margin-left: 20px;
+        width: 42px;
+        height: 42px;
+        background-size: cover;
+    }
+
+    &__name-job {
+        flex: auto;
+        width: 100px;
+        margin-left: 16px;
+        text-align: left;
+    }
+
+    &__name {
+        font-size: 13px;
+        color: #777777;
+        margin-bottom: 10px;
+        font-weight:bold;
+    }
+
+    &__job {
+        font-size: 10px;
+        color: #BFBFBF;
+    }
+
+    &__chat {
+        flex: 1;
+        margin-left: 48px;
+        width: 20px;
+        height: 16px;
+        background: url(../img/aside/chat-copy.png) no-repeat center;
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        background-color: #FCFCFC;
+        border-top: 1px solid #F1F1F1;
+        border-bottom: 1px solid #F1F1F1;
+
+        @include small {
+            justify-content: center;
+        }
+
+        @include medium {
+            justify-content: center;
+        }
+    }
+
+    &__form {
+        display: flex;
+    }
+
+    &__input {
+        width: 161px;
+        height: 25px;
+        margin-left: 18px;
+        font-size: 10px;
+        color: #C0C0C0;
+        background: #FCFCFC;
+        border:none;
+        border-bottom: 1px solid #E9E9E9;
+    }
+
+    .zoom {
+        margin: 0;
+        margin-left: 18px;
+        width: 19px;
+        height: 19px;
+        background: url(../img/aside/zoom.png) no-repeat center;
+    }
+
+    .edit {
+        margin: 0;
+        margin-left: 14px;
+        width: 19px;
+        height: 19px;
+        background: url(../img/aside/edit.png) no-repeat center;
+    }
+}

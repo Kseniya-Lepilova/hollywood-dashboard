@@ -1,0 +1,40 @@
+@mixin nav-link {
+    padding-top: 30px;
+    font-size: 10px;
+    font-weight: 400;
+    color:  #ffffff;
+}
+
+@mixin flexbox($a, $b) {
+    display: flex;
+    justify-content: $a;
+    align-items: $b;
+}
+@mixin flexbox-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin small {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin x-large {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (max-width: 992px) {
+        @content;
+    }
+}

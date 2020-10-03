@@ -1,0 +1,225 @@
+.header {
+    @include flexbox-column;
+    width: 100%;
+    min-width: 320px;
+    
+    &__nav {
+        display: flex;
+        min-width: 320px;
+        min-height: $nav-head-height;
+        border-bottom: 1px solid #F1F1F1;
+
+        @include x-large {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        @include flexbox(center, center);
+
+        min-width: 72px;
+        min-height: $nav-head-height;
+        border: 1px solid #F1F1F1;
+        border-bottom: none;
+    }
+
+    .rectangle {
+        @include flexbox(center, center);
+
+        width: 33px;
+        height: 18px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: #FD5372;
+    }
+
+    &__circle {
+        margin: auto 1px;
+        width: 6px;
+        height: 6px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+    &__btn {
+        width: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .img-folder {
+        height: 18px;
+        background: url(../img/header/folder.png) no-repeat center;
+    }
+
+    .img-settings {
+        width: 21px;
+        height: 17px;
+        background: url(../img/header/settings.png) no-repeat center;
+    }
+
+    .img-upload {
+        height: 18px;
+        background: url(../img/header/upload.png) no-repeat center;
+    }
+
+    .img-envelope {
+        height: 12px;
+        background: url(../img/header/envelope.png) no-repeat center;
+    }
+
+    .img-planet-earth {
+        width: 40%;
+        height: 40%;
+        background: url(../img/header/planet-earth.png) no-repeat center;
+    }
+
+    &__search {
+        margin: auto;
+        border-radius: 50px;
+        flex: auto;
+    }
+    
+    &__form {
+        position: relative;
+        max-width: 300px;
+        margin: auto;
+        background: #f8f6f6;
+        border-radius: 50px;
+    }
+
+      &__input, 
+      &__button {
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+      &__input {
+        width: 100%;
+        height: 34px;
+        padding-left: 15px;
+
+        @include x-large {
+            min-width: 70px;
+            font-size: 0px;
+        }
+    }
+        
+      &__button {
+        height: 16px;
+        width: 16px;
+        position: absolute;
+        top: 9px;
+        right: 13px;
+        cursor: pointer;
+        background: url(../img/header/zoom-in.png) no-repeat center;
+    }  
+
+    &__user {
+        display: flex;
+
+        @include small {
+        flex: auto;
+        justify-content: space-around;
+        min-width: 100px;
+        }
+    }
+
+    &__img-user {
+        width: 73px;
+        height: 73px;
+        background: url(../img/header/kendall-jenner.png) no-repeat center;
+        background-size: cover;
+    }
+
+    &__user-data {
+        @include flexbox-column;
+    }
+
+    &__name {
+        padding-top: 25px;
+        margin-bottom: 10px;
+        margin-left: 18px;
+        font-weight:bold;
+        font-size: 13px;
+        color: #FC6B61;
+
+        @include small {
+            display: none;
+        }
+    }
+
+    &__user-job {
+        font-size: 10px;
+        color: #BFBFBF;
+
+        @include small {
+            display: none;
+        }
+    }
+
+    &__user-menu {
+        @include flexbox(center, center);
+
+        flex-direction: column;
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+
+    &__user-menu-item {
+        width: 5px;
+        height: 5px;
+        margin-bottom: 1px;
+        background-color: #BFBFBF;
+        border-radius: 50%;
+    }
+
+    &__statistics {
+        display: flex;
+        min-width: 100%;
+        margin: 20px auto;
+    }
+
+    &__daily-statistics {
+        min-width: 120px;
+        margin: auto 20px;
+        text-align: left;
+    }
+    
+    &__text-daily {
+        margin-bottom: 9px;
+        color: #646464;
+        font-weight:bold;
+        font-size: 12px;
+    }
+
+    &__text-number {
+        color: #f75d6c;
+        font-weight:bold;
+        font-size: 20px;
+        margin-bottom: 5px;
+        background: linear-gradient(45deg, #d43356 15%, #e74e67 30%, #dd763b 55%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__text-count {
+        position: relative;
+        margin: 0px 7px;
+        color: #BFBFBF;
+        font-size: 12px;
+    }
+
+    &__text-add-statistics {
+        color: #FD5B6C;
+        font-weight:bold;
+        font-size: 12px;
+        border: none;
+        outline: none;
+        background: transparent;
+        cursor: pointer;
+    }
+}

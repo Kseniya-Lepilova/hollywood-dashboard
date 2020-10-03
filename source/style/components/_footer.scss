@@ -1,0 +1,70 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    justify-content: center;
+    padding: 20px;
+    max-height: 220px;
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__list {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+
+    &__item {
+        display: flex;
+        margin: 10px 5px;
+        border-radius: 10px;
+    }
+    
+    &__link {
+        display: flex;
+        width: 55px;
+        height: 55px;
+    }
+
+    &__img {
+        margin: auto;
+    }
+
+    .rdio {
+        background: linear-gradient(135deg, #8942db 30%, #5a58e2 70%);
+        -webkit-background-clip: content-box;;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .css {
+        background: linear-gradient(135deg, #70e4ec 30%, #43ada8f1 70%);
+        -webkit-background-clip: content-box;;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .deviantart {
+        background: linear-gradient(135deg, #e25858 30%, #aa4747f1 70%);
+        -webkit-background-clip: content-box;;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .xing {
+        background: linear-gradient(135deg, #5a58e2 30%, #8942db 70%);
+        -webkit-background-clip: content-box;;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .vimeo {
+        background: linear-gradient(135deg, #588fe2 30%, #5142db 70%);
+        -webkit-background-clip: content-box;;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .vk {
+        background: linear-gradient(135deg, #e2bd58 30%, #d6a151 70%);
+        -webkit-background-clip: content-box;;
+        -webkit-text-fill-color: transparent;
+    }
+}

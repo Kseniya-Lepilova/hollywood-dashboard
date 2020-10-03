@@ -1,0 +1,422 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    max-width: calc(100% - 273px);
+    color: #BFBFBF;
+    background-color: #dfdfdf;
+
+    @include medium {
+        flex: auto;
+        max-width: none;
+    }
+
+    &__graph {
+        display: flex;
+        max-width: 100%;
+
+        @include large {
+            flex-wrap: wrap;
+        }
+        
+        @include medium {
+            flex: auto;
+        }
+    }
+
+    &__monthly-progress {
+        @include flexbox-column;
+        
+        max-width: 704px;
+        min-width: 320px;
+        padding: 30px;
+        margin: 16px 8px 8px 16px;
+        text-align: left;
+        background-color: #FFFFFF;
+        overflow-x: scroll;
+
+        @include x-large {
+            flex-direction: column;
+        }
+        @include large {
+            margin: 16px 16px 8px;
+        }
+        @include medium {
+            max-width: none;
+            flex: auto;
+            margin: 16px 16px 8px;
+        }
+        @include small {
+            margin: 16px 0px 8px;
+        }
+    }
+
+    &__title-text-time {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__title {
+        color: #858585;
+        font-size: 14px;
+    }
+
+    .monthly {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .oval {
+        @include flexbox(center, center);
+
+        margin-top: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 64px;
+        height: 24px;
+        font-weight: bold;
+        background-color: #fa5674;
+        color: #FFFFFF;
+    }
+
+    &__axis-y-img {
+        display: flex;
+    }
+
+    &__text-axis-y {
+        @include flexbox-column;
+        margin-top: 0px;
+    }
+
+    &__text-y {
+        margin-top: auto;
+    }
+
+    &__text-time {
+        margin: 7px 8px 0px;
+        cursor: pointer;
+    }
+
+    &__img-graph {
+        margin-top: 20px;
+        margin-left: 34px;
+        min-width: 582px;
+        height: 117px; 
+        background: url(../img/main/graph.png) no-repeat center;
+        background-size: cover;
+    }
+
+    &__text-axis-x {
+        margin-left: 74px;
+        margin-top: auto;
+    }
+
+    &__text-x:not(:first-child) {
+        margin-left: 28px;
+    }
+
+    &__revenue {
+        padding: 30px;
+        min-width: 264px;
+        background-color: #ffffff;
+        margin: 16px 16px 8px 8px;
+
+        @include large {
+            flex: auto;
+            margin: 8px 16px;
+        }
+        @include small {
+            margin: 8px 0px;
+        }
+
+    }
+
+    &__img-ellipse {
+        margin: 30px auto;
+        width: 124px;
+        height: 124px;
+        background: url(../img/main/ellipse.png) no-repeat center center;
+        background-size: cover;
+        background-color: #ffffff;
+    }
+
+    &-customer-task-shimpents {
+        display: flex;
+        max-width: 100%;
+
+        @include x-large {
+            flex-direction: column;
+        }
+        @include medium {
+            flex: auto;
+        }
+    }
+
+    &__customers {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 467px;
+        padding: 30px;
+        margin: 8px 8px 8px 16px;
+        text-align: left;
+        background-color: #ffffff;
+
+        @include x-large {
+            flex: auto;
+            max-width: none;
+            margin: 8px 16px 8px;
+            justify-content: center;
+        }
+        @include small {
+            margin: 8px 0px 8px;
+        }
+    }
+
+    .block-title {
+        flex: 100%;
+        @include x-large {
+            text-align: center;
+        }
+    }
+
+    &__user-block {
+        display: flex;
+        margin: 30px 0 0;   
+    }
+
+    &__img-customers {
+        width: 43px;
+        height: 43px;
+        margin-bottom: 8px;
+    }
+
+    
+    .last-time {
+        font-size: 8px;
+        color: #979796;
+        
+    }
+
+    .sophie {
+        background: url(../img/main/sophie.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+    .peter {
+        background: url(../img/main/peter.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+    &__wall {
+        @include flexbox-column;
+        margin-left: 20px;
+    }
+
+
+    &__blockquote {
+
+        max-width: 345px;
+        height: 84px;
+        padding: 20px;
+        margin-top: auto;
+        margin-bottom: 20px;
+        background-color: #FCFCFC;
+        border: 1px solid #F1F1F1;
+        @include small {
+            padding: 5px;
+            min-height: 90px;
+            
+        }
+    }
+    &__strong {
+        color: #777777;
+    }
+    
+    .wall {
+        max-width: 316px;
+    }
+    &__task {
+        margin: 8px 16px 8px 8px;
+        max-width: 501px;     
+        
+        padding: 30px;
+        flex: auto;
+        background-color: #FFFFFF;
+        text-align: left;
+        overflow-x: scroll;
+        @include x-large {
+            max-width: none;
+            margin: 8px 16px;
+        }
+
+        @include small {
+            padding: 10px;
+            margin: 8px 0px 8px;
+        }
+    }
+
+    .pink {
+        margin-left: 12px;
+        color:#FD566F;
+    }
+
+    &__order {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 38px;
+        min-width: 460px;
+        margin: 0;
+        border-top: 1px solid #EDEDED;
+        border-bottom: 1px solid #EDEDED;
+        
+    }
+
+    &__time {
+        min-width: 75px;
+        display: flex;
+    }
+
+    &__input {
+        width: 17px;
+        height: 17px;
+
+    }
+
+    &__img-clock {
+        width: 12px;
+        height: 12px; 
+        margin-right: 9px;
+        background: url(../img/main/wall-clock.png) no-repeat center center;
+    }
+
+    &__progress-shipments {
+        display: flex;
+        max-width: 542px;
+        min-width: 320px;
+        @include x-large {
+            flex: auto;
+            max-width: none;
+        }
+        @include large {
+            flex: auto;
+            max-width: none;
+        }
+        @include medium {
+            flex: auto;
+            max-width: none;
+        }
+        @include small {
+            flex-direction: column;
+            flex: auto;
+            
+        }
+    }
+
+    &__progress {
+        flex: auto;
+        
+        min-width: 200px;
+        padding: 10px;
+        margin: 8px 8px 8px 8px;
+        background-color: #FFFFFF;
+
+        @include x-large {
+            flex: auto;
+            margin: 8px 8px 16px 16px;
+            max-width: none;
+        }
+
+        @include small {
+            flex: auto;
+            max-width: none;
+            margin: 8px 0px;
+            min-width: 320px;
+        }
+    }
+
+    &__img-progress {
+        width: 187px;
+        height: 115px;
+        margin: 29px auto 23px;
+
+        background: url(../img/main/progress.png) no-repeat center center;
+        background-size: cover;
+    }
+
+    &__shipments {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        flex: auto;
+        min-width: 200px;
+        margin: 8px 16px 8px 8px;
+        background-color: #ffffff;
+        @include x-large{
+            flex: auto;
+            margin: 8px 16px 16px 8px;
+            align-items: center;
+            max-width: none;
+        }
+
+        @include small {
+            flex: auto;
+            max-width: none;
+            margin: 8px 0px 16px;
+            min-width: 320px;
+        }
+    }
+
+    &__img-map {
+        width: 187px;
+        height: 115px;
+        margin: 24px auto;
+        background: url(../img/main/usa-map.png) no-repeat center center;
+        background-size: cover;
+    }
+
+    &__shipments-data {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .margin-null {
+        margin: 0px;
+        margin-right: 40px;
+    }
+}
+
+.main__task-progress-shipments {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+}
+
+.triangle-up::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 3px;
+    left: -8px;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 6px solid #A889E9;
+}
+
+.triangle-down::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 3px;
+    left: -8px;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 6px solid #FD5670;
+}

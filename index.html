@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./source/style/main.css">
+    <title>Hollywood dashboard</title>
+</head>
+<body>
+    <div class="wrap">
+
+<!-- ---------------------------------------------
+                    NAVIGATION 
+-------------------------------------------------->
+
+        <nav class="nav"> 
+            <div class="nav__logo">
+                <span class="nav__letter">W</span>
+            </div>
+            <div class="nav__menu">
+                <a href="#" class="nav__link home">Home</a>
+                <a href="#" class="nav__link stactics">Stactics</a>
+                <a href="#" class="nav__link user">Users</a>
+                <a href="#" class="nav__link settings">Settings</a>
+                <a href="#" class="nav__link information">Quires</a>
+                <a href="#" class="nav__link power-button"></a>
+            </div>
+        </nav> 
+
+<!-- ------------------------------------------
+                    HEADER 
+-------------------------------------------------->
+
+        <div class="main-content">
+            <header class="header">
+                <div class="header__nav">
+                    <ul>
+                        <li class="header__item">
+                            <a class="header__link" href="#">
+                                <ul class="rectangle">
+                                    <li class="header__circle"></li>
+                                    <li class="header__circle"></li>
+                                    <li class="header__circle"></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <button class="header__btn img-folder"></button>
+                        </li>
+                        <li class="header__item">
+                                <button class="header__btn img-settings"></button>
+                        </li>
+                    </ul>
+                    <div class="header__search">
+                        <form class="header__form">
+                          <input class="header__input" type="text" placeholder="Search Anything Here....">
+                          <button class="header__button" type="submit"></button>
+                        </form>
+                    </div>
+                    <ul>
+                        <li class="header__item">
+                            <button class="header__btn img-upload"></button>
+                        </li>
+                        <li class="header__item">
+                            <button class="header__btn img-envelope"></button>
+                        </li>
+                        <li class="header__item">
+                            <button class="header__btn img-planet-earth"></button>
+                        </li>
+                    </ul>
+                    <div class="header__user">
+                        <div class="header__img-user"></div>
+                        <div class="header__user-data">
+                            <p class="header__name">Kendall Jenner</p>
+                            <p class="header__user-job">Cheif Authority</p>
+                        </div>
+                        <ul class="header__user-menu">
+                            <li class="header__user-menu-item"></li>
+                            <li class="header__user-menu-item"></li>
+                            <li class="header__user-menu-item"></li>
+                        </ul>    
+                    </div>
+                </div>
+
+        <!----------- Header daily --------------->
+                
+                <ul class="header__statistics">
+                    <li class="header__daily-statistics">
+                        <p class="header__text-daily">Daily Visitors</p>
+                        <p class="header__text-number">150,0000</p>
+                        <span class="header__text-count triangle-up">1020</span>
+                        <span class="header__text-count triangle-down">1020</span>
+                    </li>
+                    <li class="header__daily-statistics">
+                        <p class="header__text-daily">Daily Customers</p>
+                        <p class="header__text-number">120,0000</p>
+                        <span class="header__text-count triangle-up">1020</span>
+                        <span class="header__text-count triangle-down">1020</span>
+                    </li>
+                    <li class="header__daily-statistics">
+                        <p class="header__text-daily">Daily Orders</p>
+                        <p class="header__text-number">900,000</p>
+                        <span class="header__text-count triangle-up">1020</span>
+                        <span class="header__text-count triangle-down">1020</span>
+                    </li>
+                    <li class="header__daily-statistics">
+                        <p class="header__text-daily">Daily Sales</p>
+                        <p class="header__text-number">850,000</p>
+                        <span class="header__text-count triangle-up">1020</span>
+                        <span class="header__text-count triangle-down">1020</span>
+                    </li>
+                    <li class="header__daily-statistics">
+                        <p class="header__text-daily">Daily Shipments</p>
+                        <p class="header__text-number">750,000</p>
+                        <span class="header__text-count triangle-up">1020</span>
+                        <span class="header__text-count triangle-down">1020</span>
+                    </li>
+                    <li class="header__daily-statistics">
+                        <p class="header__text-daily">Daily Revenue</p>
+                        <p class="header__text-number">$985,0000</p>
+                        <span class="header__text-count triangle-up">1020</span>
+                        <span class="header__text-count triangle-down">1020</span>
+                    </li>
+                    <li class="header__daily-statistics">
+                        <p class="header__text-daily">Daily Reviews</p>
+                        <p class="header__text-number">600,000</p>
+                        <span class="header__text-count triangle-up">1020</span>
+                        <span class="header__text-count triangle-down">1020</span>
+                    </li>
+                    <li class="header__daily-statistics">
+                        <button class="header__text-add-statistics">&#43 Add Stactics</button>
+                    </li>
+                </ul>
+            </header>
+
+
+<!--------------------------------------------------------------------
+                               MAIN
+------------------------------------------------------------------------->
+
+
+            <main class="main">
+                <div class="main__graph">
+                    <section class="main__monthly-progress">
+                        <div class="main__title-text-time">
+                            <h2 class="main__title">Monthly Revenue Progress</h2>
+                            <ul class="monthly">
+                                <li class="main__text-time"><div class="oval">Month</div></li>
+                                <li class="main__text-time">Day</li>
+                                <li class="main__text-time">Year</li>
+                            </ul>
+                            <ul class="header__user-menu">
+                                <li class="header__user-menu-item"></li>
+                                <li class="header__user-menu-item"></li>
+                                <li class="header__user-menu-item"></li>
+                            </ul>
+                        </div>
+                        <div class="main__axis-y-img">
+                            <ul class="main__text-axis-y">
+                                <li class="main__text-y">400k</li>
+                                <li class="main__text-y">300k</li>
+                                <li class="main__text-y">200k</li>
+                                <li class="main__text-y">100k</li>
+                            </ul>
+                            <div class="main__img-graph"></div>
+                        </div>
+                        <ul class="main__text-axis-x">
+                            <li class="main__text-x">Jan</li>
+                            <li class="main__text-x">Feb</li>
+                            <li class="main__text-x">Mar</li>
+                            <li class="main__text-x">Apr</li>
+                            <li class="main__text-x">May</li>
+                            <li class="main__text-x">Jun</li>
+                            <li class="main__text-x">Jul</li>
+                            <li class="main__text-x">Aug</li>
+                            <li class="main__text-x">Sep</li>
+                            <li class="main__text-x">Oct</li>
+                            <li class="main__text-x">Nov</li>
+                            <li class="main__text-x">Doc</li>
+                        </ul>
+                    </section>
+                    <section class="main__revenue">
+                        <h2 class="main__title">Revenue Per Hour</h2>
+                        <div class="main__img-ellipse"></div>
+                        <span class="header__text-count triangle-up">1020</span>
+                        <span class="header__text-count triangle-down">1020</span>
+                    </section>
+                </div>
+                <div class="main-customer-task-shimpents">
+                    <section class="main__customers">
+                        <h2 class="main__title block-title">Customers Feed</h2>
+                        <div class="main__user-block">
+                            <div class="main__user">
+                                <div class="main__img-customers sophie"></div>
+                                <span class="last-time">10 Min Ago</span>
+                            </div>
+                            <div class="main__wall">
+                                <blockquote class="main__blockquote"><span class="main__strong">Sophie Turner</span> is simply dummy text of the printing and 
+                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                    when an unknown printer took a galley of type and scrambled it to make a type</blockquote>
+                                    <div>
+                                        <blockquote class="main__blockquote wall"><span class="main__strong">Sophie Turner</span> is simply dummy text of the printing and 
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                            when an unknown printer took a galley of type and scrambled it to make a type</blockquote>
+                                        <blockquote class="main__blockquote wall"><span class="main__strong">Sophie Turner</span> is simply dummy text of the printing and 
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                            when an unknown printer took a galley of type and scrambled it to make a type</blockquote>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="main__user-block">
+                            <div class="main__user">
+                                <div class="main__img-customers peter"></div>
+                                <span class="last-time">10 Min Ago</span>
+                            </div>
+                            <div class="main__wall">
+                                <blockquote class="main__blockquote"><span class="main__strong">Peter Quill</span> is simply dummy text of the printing and 
+                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                    when an unknown printer took a galley of type and scrambled it to make a type</blockquote>    
+                            </div>
+                        </div>
+                    </section>
+                        
+                    <div class="main__task-progress-shipments">
+                        <section class="main__task">
+                            <h2 class="main__title">Todays Task</h2>
+                            <div class="main__order">
+                                <div class="main__goal">
+                                    <input type="checkbox" class="main__input">
+                                    <span class="pink">Arrange</span>
+                                </div>
+                                <span>simply dummy text of the printing and......</span>
+                                <div class="main__time">
+                                    <div class="main__img-clock"></div>
+                                    <span>12:24 AM</span>
+                                </div>
+                            </div>
+                            <div class="main__order">
+                                <div class="main__goal">
+                                    <input type="checkbox" class="main__input">
+                                    <span class="pink">Shipment</span>
+                                </div>
+                                <span>simply dummy text of the printing and......</span>
+                                <div class="main__time">
+                                    <div class="main__img-clock"></div>
+                                    <span>1:10 AM</span>
+                                </div>
+                            </div>
+                            <div class="main__order">
+                                <div class="main__goal">
+                                    <input type="checkbox" class="main__input">
+                                    <span class="pink">Make List</span>
+                                </div>
+                                <span>simply dummy text of the printing......</span>
+                                <div class="main__time">
+                                    <div class="main__img-clock"></div>
+                                    <span>1:24 AM</span>
+                                </div>
+                            </div>
+                            <div class="main__order">
+                                <div class="main__goal">
+                                    <input type="checkbox" class="main__input">
+                                    <span class="pink">Review</span>
+                                </div>
+                                <span>simply dummy text of the printing and......</span>
+                                <div class="main__time">
+                                    <div class="main__img-clock"></div>
+                                    <span>1:30 AM</span>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="main__progress-shipments">
+                            <section class="main__progress">
+                                <h2 class="main__title">Progress</h2>
+                                <div class="main__img-progress"></div>
+                                <p class="header__text-number">$150,0000</p>
+                                <span class="header__text-count triangle-up">1020</span>
+                                <span class="header__text-count triangle-down">1020</span>
+                            </section>
+                            <section class="main__shipments">
+                                <h2 class="main__title">Shipments</h2>
+                                <div class="main__img-map"></div>
+                                <div class="main__shipments-data">
+                                    <span class="header__text-number margin-null">$15,000</span>
+                                    <span class="header__text-count triangle-up">1020</span>
+                                    <span class="header__text-count triangle-down">1020</span>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+
+
+<!--------------------------------------------------------------------
+                                 ASIDE 
+--------------------------------------------------------------------->
+
+
+            <div class="adside-footer-container">
+                <aside class="aside">
+                    <ul class="aside__nav">
+                        <li class="aside__menu user"></li>
+                        <li class="aside__menu chat"></li>
+                        <li class="aside__menu like"></li>
+                    </ul>
+                    <ul class="aside__users">
+                        <li class="aside__user">
+                            <img class="aside__img" src="source/img/aside/jennifer-lawrence.png" alt="Jennifer Lawrence">
+                            <div class="aside__name-job">
+                                <p class="aside__name">Jennifer Lawrence</p>
+                                <p class="aside__job">Cheif Authority</p>
+                            </div>
+                            <div class="aside__chat"></div>
+                        </li>
+                        <li class="aside__user">
+                            <img class="aside__img" src="source/img/aside/brad-pitt.png" alt="Brad Pitt">
+                            <div class="aside__name-job">
+                                <p class="aside__name">Brad Pitt</p>
+                                <p class="aside__job">Cheif Authority</p>
+                            </div>
+                            <div class="aside__chat"></div>
+                        </li>
+                        <li class="aside__user">
+                            <img class="aside__img" src="source/img/aside/leonardo-dicaprio.png" alt="Leonardo Dicaprio">
+                            <div class="aside__name-job">
+                                <p class="aside__name">Leonardo Dicaprio</p>
+                                <p class="aside__job">Cheif Authority</p>
+                            </div>
+                            <div class="aside__chat"></div>
+                        </li>
+                        <li class="aside__user">
+                            <img class="aside__img" src="source/img/aside/jesse-eisenberg.png" alt="Jesse Eisenberg">
+                            <div class="aside__name-job">
+                                <p class="aside__name">Jesse Eisenberg</p>
+                                <p class="aside__job">Cheif Authority</p>
+                            </div>
+                            <div class="aside__chat"></div>
+                        </li>
+                        <li class="aside__user">
+                            <img class="aside__img" src="source/img/aside/kristen_stewart.png" alt="Kristen Stewart">
+                            <div class="aside__name-job">
+                                <p class="aside__name">Kristen Stewart</p>
+                                <p class="aside__job">Cheif Authority</p>
+                            </div>
+                            <div class="aside__chat"></div>
+                        </li>
+                        <li class="aside__user">
+                            <img class="aside__img" src="source/img/aside/ben-affleck.png" alt="Ben Affleck">
+                            <div class="aside__name-job">
+                                <p class="aside__name">Ben Affleck</p>
+                                <p class="aside__job">Cheif Authority</p>
+                            </div>
+                            <div class="aside__chat"></div>
+                        </li>
+                        <li class="aside__user">
+                            <img class="aside__img" src="source/img/aside/Lily-Rose.png" alt="Lily-Rose Depp">
+                            <div class="aside__name-job">
+                                <p class="aside__name">Lily-Rose Depp</p>
+                                <p class="aside__job">Cheif Authority</p>
+                            </div>
+                            <div class="aside__chat"></div>
+                        </li>
+                    </ul>
+                    <div class="aside__search">
+                        <form class="aside__form">
+                            <input class="aside__input" type="text" placeholder="Search Peoples, Chats and Reviews">
+                            <div class="aside__img zoom"></div>
+                            <div class="aside__img edit"></div>
+                        </form>
+                    </div>
+                </aside>
+
+<!--------------------------------------------------------
+                     FOOTER 
+------------------------------------------------------------>
+
+
+                <footer class="footer">
+                    <h2 class="footer__title">Featured Companys</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item rdio">
+                            <a class="footer__link" href="#">
+                                <img class="footer__img" src="source/img/footer/rdio-logo.png" alt="rdio">
+                            </a>
+                        </li>
+                        <li class="footer__item css">
+                            <a class="footer__link" href="#">
+                                <img class="footer__img" src="source/img/footer/css-logo.png" alt="css">
+                            </a>
+                        </li>
+                        <li class="footer__item deviantart">
+                            <a class="footer__link" href="#">
+                                <img class="footer__img" src="source/img/footer/deviantart.png" alt="deviantart">
+                            </a>
+                        </li>
+                        <li class="footer__item xing">
+                            <a class="footer__link" href="#">
+                                <img class="footer__img" src="source/img/footer/xing-logo.png" alt="xing">
+                            </a>
+                        </li>
+                        <li class="footer__item vimeo">
+                            <a class="footer__link" href="#">
+                                <img class="footer__img" src="source/img/footer/vimeo.png" alt="vimeo">
+                            </a>
+                        </li>
+                        <li class="footer__item vk">
+                            <a class="footer__link" href="#">
+                                <img class="footer__img" src="source/img/footer/vk-logo.png" alt="vk">
+                            </a>
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
